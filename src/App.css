@@ -26,6 +26,10 @@ body{
   justify-content: space-between;
 }
 
+.app__header > h1{
+  color:#CC1034;
+  font-size: 2rem;
+}
 .app__left{
   flex:0.9; 
   /* This takes 90% of flex screen */
@@ -33,4 +37,23 @@ body{
 .app_stats{
   display: flex;
   justify-content: space-between;
+}
+
+.app__dropdown{
+  background-color: white;
+}
+
+.app__right{
+  display: flex;
+  flex-direction: column;
+}
+
+.app__right .MuiCardContent-root{
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph{
+  flex-grow:1 ;
 }

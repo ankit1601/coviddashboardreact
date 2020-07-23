@@ -44,7 +44,7 @@ const options = {
     }
 }
 
-function LineGraph({casesType="cases"}) {
+function LineGraph({casesType="cases", ...props}) {
     //https://disease.sh/v3/covid-19/historicall/all?lastdays=120
     const [data, setData] = useState([])
     useEffect( ()=>{
@@ -80,7 +80,7 @@ function LineGraph({casesType="cases"}) {
         return chartData;
     }
     return (
-        <div>
+        <div className={props.className}>
             {/* <h1>I am Graph</h1> */}
             {data?.length>0 && ( <Line 
                 options={options}
